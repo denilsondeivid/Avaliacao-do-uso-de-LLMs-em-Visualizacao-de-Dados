@@ -17,6 +17,7 @@ A ideia principal e permitir que qualquer leitor entenda rapidamente:
 ## Blocos principais
 
 - [`../README.md`](../README.md): pagina inicial com sintese, navegacao e destaques visuais.
+- [`contexto-e-insights.md`](contexto-e-insights.md): resumo do problema de pesquisa e dos principais achados atuais.
 - [`guia-de-leitura.md`](guia-de-leitura.md): roteiro rapido para diferentes perfis de leitura.
 - [`../assets/imagens-base/`](../assets/imagens-base/): conjunto de graficos-base estudados.
 - [`../dados/brutos/`](../dados/brutos/): planilha central de avaliacao.

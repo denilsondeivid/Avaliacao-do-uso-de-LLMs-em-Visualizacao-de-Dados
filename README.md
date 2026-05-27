@@ -21,6 +21,20 @@ O estudo investiga como diferentes LLMs respondem a tarefas relacionadas a visua
 
 Os experimentos combinam imagens-base, respostas textuais de diferentes modelos, planilha de avaliacao, notebooks analiticos e figuras comparativas produzidas ao longo da pesquisa.
 
+## Contexto e insights
+
+Para deixar o repositorio mais autoexplicativo, foi adicionado um resumo textual do problema, da motivacao e dos principais achados observados ate aqui:
+
+- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introducao e resumo da analise/discussao dos resultados
+
+Em sintese:
+
+- o trabalho parte da constatacao de que erros de visualizacao comprometem a leitura de graficos mesmo quando os dados estao corretos;
+- a pesquisa investiga se LLMs conseguem identificar esses erros e propor correcoes com base em boas praticas da literatura;
+- os resultados atuais sugerem melhor desempenho geral de ChatGPT e Claude;
+- a eficacia da tecnica de prompt varia conforme o modelo e a tarefa;
+- a avaliacao humana continua importante para validar justificativas, qualidade visual e presenca de novos erros.
+
 ## Leitura rapida
 
 Se voce quer entender o repositorio em poucos minutos, siga esta ordem:
@@ -113,6 +127,7 @@ Mais referencias visuais estao em [`docs/resultados-em-destaque.md`](docs/result
 ## Documentacao complementar
 
 - [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md): percurso sugerido para ler o repositorio
+- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introducao e da discussao dos resultados
 - [`docs/visao-geral.md`](docs/visao-geral.md): resumo dos blocos principais
 - [`docs/metodologia.md`](docs/metodologia.md): descricao resumida da logica metodologica
 - [`docs/status-da-pesquisa.md`](docs/status-da-pesquisa.md): estado atual da pesquisa

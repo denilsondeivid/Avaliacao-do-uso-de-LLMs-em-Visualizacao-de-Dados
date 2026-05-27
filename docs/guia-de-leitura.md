@@ -7,9 +7,10 @@ Este guia sugere um percurso simples para entender o repositorio de forma rapida
 Leia nesta ordem:
 
 1. [`../README.md`](../README.md)
-2. [`visao-geral.md`](visao-geral.md)
-3. [`metodologia.md`](metodologia.md)
-4. [`status-da-pesquisa.md`](status-da-pesquisa.md)
+2. [`contexto-e-insights.md`](contexto-e-insights.md)
+3. [`visao-geral.md`](visao-geral.md)
+4. [`metodologia.md`](metodologia.md)
+5. [`status-da-pesquisa.md`](status-da-pesquisa.md)
 
 ## Se voce quer entender os experimentos
 
@@ -39,5 +40,6 @@ Use:
 ## Leitura por perfil
 
 - orientacao ou banca: `README.md` -> `guia-de-leitura.md` -> experimentos -> manuscrito
+- orientacao ou banca: `README.md` -> `contexto-e-insights.md` -> experimentos -> manuscrito
 - leitura tecnica: `dados/` -> `experimentos/` -> `notebooks/` -> `resultados/`
 - consulta rapida: `README.md` -> `resultados-em-destaque.md`
