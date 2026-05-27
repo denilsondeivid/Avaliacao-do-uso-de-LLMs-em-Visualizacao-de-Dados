@@ -1,30 +1,47 @@
 ﻿# Avaliacao do uso de LLMs em Visualizacao de Dados
 
-Este repositorio organiza os materiais da pesquisa de TCC sobre o uso de modelos de linguagem de grande porte na analise de graficos, com foco em duas frentes experimentais:
+Este repositorio apresenta os materiais do TCC sobre o uso de modelos de linguagem de grande porte na analise de visualizacoes de dados. A pesquisa foi organizada para mostrar com clareza:
 
-- identificacao de erros de visualizacao;
-- correcao de erros de visualizacao.
+- quais graficos foram estudados;
+- como os modelos foram avaliados;
+- onde estao os resultados de cada etapa;
+- como acompanhar a evolucao do trabalho.
 
-A pesquisa esta em andamento. O repositorio foi estruturado para separar claramente os dados brutos, os notebooks, os resultados visuais e o material textual do TCC, facilitando a leitura, a reproducao e a expansao futura do trabalho.
+Atualmente a pesquisa esta estruturada em duas frentes experimentais:
 
-## Sintese da pesquisa
+1. identificacao de erros de visualizacao;
+2. correcao de erros de visualizacao.
+
+## Sintese
 
 O estudo investiga como diferentes LLMs respondem a tarefas relacionadas a visualizacao de dados em dois cenarios complementares:
 
-1. identificar erros presentes em graficos;
-2. propor ou verificar correcoes para esses erros.
+- detectar problemas visuais presentes em graficos;
+- propor ou verificar correcoes para esses problemas.
 
-Os experimentos usam imagens-base de graficos, respostas textuais de diferentes modelos, uma planilha de mapeamento da avaliacao grafica e notebooks de analise para consolidar metricas e gerar figuras comparativas.
+Os experimentos combinam imagens-base, respostas textuais de diferentes modelos, planilha de avaliacao, notebooks analiticos e figuras comparativas produzidas ao longo da pesquisa.
 
-## Onde esta cada etapa da pesquisa
+## Leitura rapida
 
-- `experimentos/identificacao-de-erros/`: materiais da etapa de identificacao de erros, incluindo respostas dos modelos, notebook principal e figuras de resultado.
-- `experimentos/correcao-de-erros/`: materiais da etapa de correcao de erros, incluindo respostas dos modelos, notebook da etapa e figuras associadas.
-- `dados/brutos/`: planilha central utilizada como base de avaliacao.
-- `assets/imagens-base/`: conjunto de graficos-base estudados na pesquisa.
-- `docs/`: documentacao textual de apoio, incluindo metodologia, status da pesquisa e guia de navegacao.
-- `manuscrito/`: versoes do TCC e materiais de apoio a escrita academica.
-- `archive/`: observacoes sobre a origem dos arquivos e referencias ao material bruto reorganizado.
+Se voce quer entender o repositorio em poucos minutos, siga esta ordem:
+
+1. leia este `README.md`;
+2. consulte [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md);
+3. veja a etapa de [`identificacao-de-erros`](experimentos/identificacao-de-erros/README.md);
+4. veja a etapa de [`correcao-de-erros`](experimentos/correcao-de-erros/README.md);
+5. consulte o material academico em [`manuscrito/`](manuscrito/README.md).
+
+## Onde esta cada parte da pesquisa
+
+| Bloco | Funcao |
+|---|---|
+| [`assets/imagens-base/`](assets/imagens-base/) | Graficos-base estudados na pesquisa |
+| [`dados/brutos/`](dados/brutos/) | Planilha central de avaliacao |
+| [`experimentos/identificacao-de-erros/`](experimentos/identificacao-de-erros/README.md) | Etapa de identificacao de erros, com respostas, notebook e figuras |
+| [`experimentos/correcao-de-erros/`](experimentos/correcao-de-erros/README.md) | Etapa de correcao de erros, com respostas, notebook e figuras |
+| [`docs/`](docs/) | Documentacao de apoio, navegacao e status da pesquisa |
+| [`manuscrito/`](manuscrito/README.md) | TCC em PDF e materiais de apoio academico |
+| [`archive/`](archive/origem/README.md) | Registro da origem e reorganizacao do material |
 
 ## Estrutura do repositorio
 
@@ -43,53 +60,74 @@ Os experimentos usam imagens-base de graficos, respostas textuais de diferentes 
 `-- archive/
 ```
 
-## Fluxo geral dos materiais
+## Fluxo dos materiais
 
-1. `assets/imagens-base/` concentra os graficos originais usados como objeto de estudo.
-2. `dados/brutos/` guarda a planilha principal de avaliacao.
-3. Cada pasta dentro de `experimentos/` separa os artefatos da etapa correspondente.
-4. Em cada experimento, os dados brutos das respostas dos modelos ficam em `dados/brutos/respostas-llms/`.
-5. Os notebooks da etapa ficam em `notebooks/`.
-6. As figuras e saidas associadas a cada etapa ficam em `resultados/`.
-7. O material textual do trabalho academico fica em `manuscrito/`.
+1. os graficos-base ficam em `assets/imagens-base/`;
+2. a planilha principal fica em `dados/brutos/`;
+3. cada etapa experimental possui sua propria pasta em `experimentos/`;
+4. dentro de cada etapa, as respostas brutas ficam em `dados/brutos/respostas-llms/`;
+5. os notebooks ficam em `notebooks/`;
+6. as figuras e saidas ficam em `resultados/`;
+7. o material academico fica em `manuscrito/`.
 
 ## Etapas experimentais
 
 ### Identificacao de erros
 
-Esta etapa reune as respostas de multiplos modelos em diferentes rodadas e tecnicas de prompting para analisar a capacidade de detectar problemas de visualizacao em graficos.
+Esta etapa analisa a capacidade dos modelos de identificar erros de visualizacao em graficos. Ela concentra multiplas rodadas, tecnicas de prompting e respostas de diferentes LLMs.
 
-Local principal:
-- `experimentos/identificacao-de-erros/`
-
-Conteudo esperado nessa etapa:
-- respostas brutas por modelo e rodada;
-- notebook de consolidacao e analise;
-- figuras geradas a partir das avaliacoes;
-- espaco para dados processados e tabelas derivadas.
+- pasta principal: [`experimentos/identificacao-de-erros/`](experimentos/identificacao-de-erros/README.md)
+- modelos presentes: ChatGPT, Claude, DeepSeek e Gemini
+- materiais principais: respostas por rodada, notebook analitico e figuras de resultados
 
 ### Correcao de erros
 
-Esta etapa reune os materiais ligados a analise e proposta de correcao de erros de visualizacao, incluindo verificacao da qualidade das respostas e resultados comparativos.
+Esta etapa concentra a analise e verificacao de respostas voltadas a correcao de problemas de visualizacao, incluindo a proposta de versoes corrigidas dos graficos.
 
-Local principal:
-- `experimentos/correcao-de-erros/`
+- pasta principal: [`experimentos/correcao-de-erros/`](experimentos/correcao-de-erros/README.md)
+- modelos presentes: ChatGPT e Claude
+- materiais principais: respostas brutas, notebook da etapa e figuras associadas
 
-Conteudo esperado nessa etapa:
-- respostas brutas dos modelos;
-- notebook de analise da etapa;
-- figuras de apoio e resultados gerados;
-- espaco para tabelas e consolidacoes futuras.
+## Destaques visuais
+
+### Graficos-base
+
+| Exemplo 1 | Exemplo 2 |
+|---|---|
+| ![](assets/imagens-base/grafico-01.jpeg) | ![](assets/imagens-base/grafico-02.jpeg) |
+
+### Saidas da etapa de identificacao
+
+| Figura 1 | Figura 2 |
+|---|---|
+| ![](experimentos/identificacao-de-erros/resultados/figuras/figura-identificacao-01.png) | ![](experimentos/identificacao-de-erros/resultados/figuras/figura-identificacao-02.png) |
+
+### Saidas da etapa de correcao
+
+| Figura 1 | Figura 2 |
+|---|---|
+| ![](experimentos/correcao-de-erros/resultados/figuras/figura-correcao-01.png) | ![](experimentos/correcao-de-erros/resultados/figuras/figura-correcao-02.png) |
+
+Mais referencias visuais estao em [`docs/resultados-em-destaque.md`](docs/resultados-em-destaque.md).
 
 ## Documentacao complementar
 
-- `docs/visao-geral.md`: resumo do repositorio e dos seus blocos principais.
-- `docs/metodologia.md`: descricao resumida da logica metodologica da pesquisa.
-- `docs/status-da-pesquisa.md`: registro do estagio atual da organizacao e da pesquisa.
-- `docs/organizacao-do-repositorio.md`: guia rapido de navegacao pelas pastas.
+- [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md): percurso sugerido para ler o repositorio
+- [`docs/visao-geral.md`](docs/visao-geral.md): resumo dos blocos principais
+- [`docs/metodologia.md`](docs/metodologia.md): descricao resumida da logica metodologica
+- [`docs/status-da-pesquisa.md`](docs/status-da-pesquisa.md): estado atual da pesquisa
+- [`docs/organizacao-do-repositorio.md`](docs/organizacao-do-repositorio.md): mapa rapido das pastas
+- [`docs/resultados-em-destaque.md`](docs/resultados-em-destaque.md): galeria comentada de figuras
+
+## Status atual
+
+- a organizacao do repositorio ja reflete o fluxo da pesquisa;
+- a etapa de identificacao de erros esta mais ampla em modelos e rodadas;
+- a etapa de correcao de erros esta organizada e pronta para expansao;
+- novas tabelas, rodadas e consolidacoes podem ser adicionadas sem alterar a logica principal.
 
 ## Observacoes
 
-- Os nomes das pastas e arquivos foram normalizados para facilitar navegacao, versionamento e reproducao.
-- O material original local foi reorganizado sem incluir o arquivo compactado bruto no versionamento.
-- Como a pesquisa esta em andamento, novas rodadas, modelos, tabelas e figuras podem ser adicionados mantendo a mesma estrutura.
+- os nomes das pastas e arquivos foram normalizados para facilitar navegacao, versionamento e reproducao;
+- o material original local foi reorganizado sem incluir o arquivo compactado bruto no versionamento;
+- como a pesquisa esta em andamento, o repositorio foi preparado para crescimento incremental.
