@@ -1,5 +1,6 @@
 ﻿# Avaliacao do uso de LLMs em Visualizacao de Dados
-Desenvolvido por: Denilson Deivid Lima Silva
+Desenvolvido por: Denilson Deivid Lima Silva  
+
 Orientador por: Prof Dr. Maxwell Guimarães de Oliveira
 
 Este repositorio apresenta os materiais do TCC sobre o uso de modelos de linguagem de grande porte na analise de visualizacoes de dados. A pesquisa foi organizada para mostrar com clareza:
