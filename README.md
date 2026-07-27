@@ -1,66 +1,68 @@
-﻿# Avaliacao do uso de LLMs em Visualizacao de Dados
+# Avaliação do uso de VLMs em Visualização de Dados
 Desenvolvido por: Denilson Deivid Lima Silva  
 
-Orientador por: Prof Dr. Maxwell Guimarães de Oliveira
+Orientador: Prof. Dr. Maxwell Guimarães de Oliveira
 
-Este repositorio apresenta os materiais do TCC sobre o uso de modelos de linguagem de grande porte na analise de visualizacoes de dados. A pesquisa foi organizada para mostrar com clareza:
+Sou concluinte no Curso de Ciência da Computação na Universidade Federal de Campina Grande (UFCG), atualmente faço parte do Projeto de Tecnologias da Informação e Comunicação (TIC-Virtus) e atuo como monitor da cadeira de Visualização de Dados. 
 
-- quais graficos foram estudados;
+Este repositório apresenta os materiais do TCC sobre o uso de modelos de linguagem de grande porte na análise de visualizações de dados. A pesquisa foi organizada para mostrar com clareza:
+
+- quais gráficos foram estudados;
 - como os modelos foram avaliados;
-- onde estao os resultados de cada etapa;
-- como acompanhar a evolucao do trabalho.
+- onde estão os resultados de cada etapa;
+- como acompanhar a evolução do trabalho.
 
-Atualmente a pesquisa esta estruturada em duas frentes experimentais:
+Atualmente, a pesquisa está estruturada em duas frentes experimentais:
 
-1. identificacao de erros de visualizacao;
-2. correcao de erros de visualizacao.
+1. identificação de erros de visualização;
+2. correção de erros de visualização.
 
-## Sintese
+## Síntese
 
-O estudo investiga como diferentes LLMs respondem a tarefas relacionadas a visualizacao de dados em dois cenarios complementares:
+O estudo investiga como diferentes VLMs respondem a tarefas relacionadas a visualização de dados em dois cenários complementares:
 
-- detectar problemas visuais presentes em graficos;
-- propor ou verificar correcoes para esses problemas.
+- detectar problemas visuais presentes em gráficos;
+- propor ou verificar correções para esses problemas.
 
-Os experimentos combinam imagens-base, respostas textuais de diferentes modelos, planilha de avaliacao, notebooks analiticos e figuras comparativas produzidas ao longo da pesquisa.
+Os experimentos combinam imagens-base, respostas textuais de diferentes modelos, planilha de avaliação, notebooks analíticos e figuras comparativas produzidas ao longo da pesquisa.
 
 ## Contexto e insights
 
-Para deixar o repositorio mais autoexplicativo, foi adicionado um resumo textual do problema, da motivacao e dos principais achados observados ate aqui:
+Para deixar o repositório mais autoexplicativo, foi adicionado um resumo textual do problema, da motivação e dos principais achados observados até aqui:
 
-- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introducao e resumo da analise/discussao dos resultados
+- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introdução e resumo da análise/discussão dos resultados
 
-Em sintese:
+Em síntese:
 
-- o trabalho parte da constatacao de que erros de visualizacao comprometem a leitura de graficos mesmo quando os dados estao corretos;
-- a pesquisa investiga se LLMs conseguem identificar esses erros e propor correcoes com base em boas praticas da literatura;
-- os resultados atuais sugerem melhor desempenho geral de ChatGPT e Claude;
-- a eficacia da tecnica de prompt varia conforme o modelo e a tarefa;
-- a avaliacao humana continua importante para validar justificativas, qualidade visual e presenca de novos erros.
+- o trabalho parte da constatação de que erros de visualização comprometem a leitura de gráficos mesmo quando os dados estão corretos;
+- a pesquisa investiga se VLMs conseguem identificar esses erros e propor correções com base em boas práticas da literatura;
+- os resultados atuais sugerem melhor desempenho geral de GPT-5.4 e Claude;
+- a eficácia da técnica de prompt varia conforme o modelo e a tarefa;
+- a avaliação humana continua importante para validar justificativas, qualidade visual e presença de novos erros.
 
-## Leitura rapida
+## Leitura rápida
 
-Se voce quer entender o repositorio em poucos minutos, siga esta ordem:
+Se você quer entender o repositório em poucos minutos, siga esta ordem:
 
 1. leia este `README.md`;
 2. consulte [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md);
 3. veja a etapa de [`identificacao-de-erros`](experimentos/identificacao-de-erros/README.md);
 4. veja a etapa de [`correcao-de-erros`](experimentos/correcao-de-erros/README.md);
-5. consulte o material academico em [`manuscrito/`](manuscrito/README.md).
+5. consulte o material acadêmico em [`manuscrito/`](manuscrito/README.md).
 
-## Onde esta cada parte da pesquisa
+## Onde está cada parte da pesquisa
 
-| Bloco | Funcao |
+| Bloco | Função |
 |---|---|
-| [`assets/imagens-base/`](assets/imagens-base/) | Graficos-base estudados na pesquisa |
-| [`dados/brutos/`](dados/brutos/) | Planilha central de avaliacao |
-| [`experimentos/identificacao-de-erros/`](experimentos/identificacao-de-erros/README.md) | Etapa de identificacao de erros, com respostas, notebook e figuras |
-| [`experimentos/correcao-de-erros/`](experimentos/correcao-de-erros/README.md) | Etapa de correcao de erros, com respostas, notebook e figuras |
-| [`docs/`](docs/) | Documentacao de apoio, navegacao e status da pesquisa |
-| [`manuscrito/`](manuscrito/README.md) | TCC em PDF e materiais de apoio academico |
-| [`archive/`](archive/origem/README.md) | Registro da origem e reorganizacao do material |
+| [`assets/imagens-base/`](assets/imagens-base/) | Gráficos-base estudados na pesquisa |
+| [`dados/brutos/`](dados/brutos/) | Planilha central de avaliação |
+| [`experimentos/identificacao-de-erros/`](experimentos/identificacao-de-erros/README.md) | Etapa de identificação de erros, com respostas, notebook e figuras |
+| [`experimentos/correcao-de-erros/`](experimentos/correcao-de-erros/README.md) | Etapa de correção de erros, com respostas, notebook e figuras |
+| [`docs/`](docs/) | Documentação de apoio, navegação e status da pesquisa |
+| [`manuscrito/`](manuscrito/README.md) | TCC em PDF e materiais de apoio acadêmico |
+| [`archive/`](archive/origem/README.md) | Registro da origem e reorganização do material |
 
-## Estrutura do repositorio
+## Estrutura do repositório
 
 ```text
 .
@@ -79,27 +81,27 @@ Se voce quer entender o repositorio em poucos minutos, siga esta ordem:
 
 ## Fluxo dos materiais
 
-1. os graficos-base ficam em `assets/imagens-base/`;
+1. os gráficos-base ficam em `assets/imagens-base/`;
 2. a planilha principal fica em `dados/brutos/`;
-3. cada etapa experimental possui sua propria pasta em `experimentos/`;
+3. cada etapa experimental possui sua própria pasta em `experimentos/`;
 4. dentro de cada etapa, as respostas brutas ficam em `dados/brutos/respostas-llms/`;
 5. os notebooks ficam em `notebooks/`;
-6. as figuras e saidas ficam em `resultados/`;
-7. o material academico fica em `manuscrito/`.
+6. as figuras e saídas ficam em `resultados/`;
+7. o material acadêmico fica em `manuscrito/`.
 
 ## Etapas experimentais
 
-### Identificacao de erros
+### Identificação de erros
 
-Esta etapa analisa a capacidade dos modelos de identificar erros de visualizacao em graficos. Ela concentra multiplas rodadas, tecnicas de prompting e respostas de diferentes LLMs.
+Esta etapa analisa a capacidade dos modelos de identificar erros de visualização em gráficos. Ela concentra múltiplas rodadas, técnicas de prompting e respostas de diferentes LLMs.
 
 - pasta principal: [`experimentos/identificacao-de-erros/`](experimentos/identificacao-de-erros/README.md)
 - modelos presentes: ChatGPT, Claude, DeepSeek e Gemini
-- materiais principais: respostas por rodada, notebook analitico e figuras de resultados
+- materiais principais: respostas por rodada, notebook analítico e figuras de resultados
 
-### Correcao de erros
+### Correção de erros
 
-Esta etapa concentra a analise e verificacao de respostas voltadas a correcao de problemas de visualizacao, incluindo a proposta de versoes corrigidas dos graficos.
+Esta etapa concentra a análise e verificação de respostas voltadas à correção de problemas de visualização, incluindo a proposta de versões corrigidas dos gráficos.
 
 - pasta principal: [`experimentos/correcao-de-erros/`](experimentos/correcao-de-erros/README.md)
 - modelos presentes: ChatGPT e Claude
@@ -107,45 +109,45 @@ Esta etapa concentra a analise e verificacao de respostas voltadas a correcao de
 
 ## Destaques visuais
 
-### Graficos-base
+### Gráficos-base
 
 | Exemplo 1 | Exemplo 2 |
 |---|---|
 | ![](assets/imagens-base/grafico-01.jpeg) | ![](assets/imagens-base/grafico-02.jpeg) |
 
-### Saidas da etapa de identificacao
+### Saídas da etapa de identificação
 
 | Figura 1 | Figura 2 |
 |---|---|
 | ![](experimentos/identificacao-de-erros/resultados/figuras/figura-identificacao-01.png) | ![](experimentos/identificacao-de-erros/resultados/figuras/figura-identificacao-02.png) |
 
-### Saidas da etapa de correcao
+### Saídas da etapa de correção
 
 | Figura 1 | Figura 2 |
 |---|---|
 | ![](experimentos/correcao-de-erros/resultados/figuras/figura-correcao-01.png) | ![](experimentos/correcao-de-erros/resultados/figuras/figura-correcao-02.png) |
 
-Mais referencias visuais estao em [`docs/resultados-em-destaque.md`](docs/resultados-em-destaque.md).
+Mais referências visuais estão em [`docs/resultados-em-destaque.md`](docs/resultados-em-destaque.md).
 
-## Documentacao complementar
+## Documentação complementar
 
-- [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md): percurso sugerido para ler o repositorio
-- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introducao e da discussao dos resultados
+- [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md): percurso sugerido para ler o repositório
+- [`docs/contexto-e-insights.md`](docs/contexto-e-insights.md): resumo da introdução e da discussão dos resultados
 - [`docs/visao-geral.md`](docs/visao-geral.md): resumo dos blocos principais
-- [`docs/metodologia.md`](docs/metodologia.md): descricao resumida da logica metodologica
+- [`docs/metodologia.md`](docs/metodologia.md): descrição resumida da lógica metodológica
 - [`docs/status-da-pesquisa.md`](docs/status-da-pesquisa.md): estado atual da pesquisa
-- [`docs/organizacao-do-repositorio.md`](docs/organizacao-do-repositorio.md): mapa rapido das pastas
+- [`docs/organizacao-do-repositorio.md`](docs/organizacao-do-repositorio.md): mapa rápido das pastas
 - [`docs/resultados-em-destaque.md`](docs/resultados-em-destaque.md): galeria comentada de figuras
 
 ## Status atual
 
-- a organizacao do repositorio ja reflete o fluxo da pesquisa;
-- a etapa de identificacao de erros esta mais ampla em modelos e rodadas;
-- a etapa de correcao de erros esta organizada e pronta para expansao;
-- novas tabelas, rodadas e consolidacoes podem ser adicionadas sem alterar a logica principal.
+- a organização do repositório já reflete o fluxo da pesquisa;
+- a etapa de identificação de erros está mais ampla em modelos e rodadas;
+- a etapa de correção de erros está organizada e pronta para expansão;
+- novas tabelas, rodadas e consolidações podem ser adicionadas sem alterar a lógica principal.
 
-## Observacoes
+## Observações
 
-- os nomes das pastas e arquivos foram normalizados para facilitar navegacao, versionamento e reproducao;
+- os nomes das pastas e arquivos foram normalizados para facilitar navegação, versionamento e reprodução;
 - o material original local foi reorganizado sem incluir o arquivo compactado bruto no versionamento;
-- como a pesquisa esta em andamento, o repositorio foi preparado para crescimento incremental.
+- como a pesquisa está em andamento, o repositório foi preparado para crescimento incremental.
