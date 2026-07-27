@@ -45,8 +45,7 @@ Em síntese:
 Se você quer entender o repositório em poucos minutos, siga esta ordem:
 
 1. leia este `README.md`;
-2. TCC completo (Avaliacao-do-uso-de-LLMs-em-Visualizacao-de-Dados/docs
-/)
+2. leia o [TCC completo](docs/Avaliacao-do-uso-de-LLMs-em-Visualizacao-de-Dados.pdf);
 3. consulte [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md);
 4. veja a etapa de [`identificacao-de-erros`](experimentos/identificacao-de-erros/README.md);
 5. veja a etapa de [`correcao-de-erros`](experimentos/correcao-de-erros/README.md);
