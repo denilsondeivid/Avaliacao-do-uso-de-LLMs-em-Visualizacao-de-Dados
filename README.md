@@ -45,10 +45,11 @@ Em síntese:
 Se você quer entender o repositório em poucos minutos, siga esta ordem:
 
 1. leia este `README.md`;
-2. consulte [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md);
-3. veja a etapa de [`identificacao-de-erros`](experimentos/identificacao-de-erros/README.md);
-4. veja a etapa de [`correcao-de-erros`](experimentos/correcao-de-erros/README.md);
-5. consulte o material acadêmico em [`manuscrito/`](manuscrito/README.md).
+2. TCC completo (docs/Avaliação_do_uso_de_modelos_multimodais_na_melhoria_de_visualização_de_dados_com_base_em_boas_práticas_da_literatura.pdf)
+3. consulte [`docs/guia-de-leitura.md`](docs/guia-de-leitura.md);
+4. veja a etapa de [`identificacao-de-erros`](experimentos/identificacao-de-erros/README.md);
+5. veja a etapa de [`correcao-de-erros`](experimentos/correcao-de-erros/README.md);
+6. consulte o material acadêmico em [`manuscrito/`](manuscrito/README.md).
 
 ## Onde está cada parte da pesquisa
 
